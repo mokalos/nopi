@@ -50,6 +50,7 @@ jobs:
         cp -R /inputs/repo /nlp
         cd /nlp
         pip3 install -U transformers
+        lscpu
         python3 nlp_text_generation.py
         mv output.txt /outputs/generatedText
         ls "-aFlR" /outputs/generatedText
